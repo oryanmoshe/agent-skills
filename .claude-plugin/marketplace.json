@@ -1,0 +1,18 @@
+{
+  "name": "agent-skills-marketplace",
+  "owner": {
+    "name": "oryanmoshe"
+  },
+  "metadata": {
+    "description": "Battle-tested skills for disciplined AI-assisted development.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "agent-skills",
+      "source": ".",
+      "description": "Task tracking, parallel exploration, context preservation, code review, and more.",
+      "version": "0.1.0"
+    }
+  ]
+}
