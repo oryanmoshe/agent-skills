@@ -1,0 +1,18 @@
+{
+  "name": "skills",
+  "description": "Battle-tested skills for disciplined AI-assisted development. Task tracking, parallel exploration, context preservation, code review, and more.",
+  "version": "0.1.0",
+  "author": {
+    "name": "oryanmoshe"
+  },
+  "repository": "https://github.com/oryanmoshe/skills",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "workflow",
+    "code-review",
+    "task-management",
+    "debugging",
+    "exploration"
+  ]
+}
