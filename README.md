@@ -12,6 +12,7 @@ Battle-tested skills for disciplined AI-assisted development. Built for [Claude 
 | [`committing-code`](skills/committing-code/SKILL.md) | Writes git commits using conventional commits format with gitmoji |
 | [`managing-agents-md`](skills/managing-agents-md/SKILL.md) | Creates and maintains AGENTS.md documentation for AI coding agents |
 | [`addressing-pr-feedback`](skills/addressing-pr-feedback/SKILL.md) | Fetches, organizes, and addresses GitHub PR review comments |
+| [`reviewing-code`](skills/reviewing-code/SKILL.md) | Reviews code changes for bugs, performance, security, and best practices with priority-based rules |
 
 ## Installation
 

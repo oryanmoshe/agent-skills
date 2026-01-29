@@ -23,6 +23,7 @@ skills/                   # All skills live here
 | `committing-code` | Writes git commits using conventional commits with gitmoji |
 | `managing-agents-md` | Creates and maintains AGENTS.md documentation for AI agents |
 | `addressing-pr-feedback` | Fetches, organizes, and addresses GitHub PR review comments |
+| `reviewing-code` | Reviews code changes for bugs, performance, security, and best practices |
 
 ## Contributing
 
