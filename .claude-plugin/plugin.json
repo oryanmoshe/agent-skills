@@ -1,11 +1,11 @@
 {
-  "name": "skills",
+  "name": "agent-skills",
   "description": "Battle-tested skills for disciplined AI-assisted development. Task tracking, parallel exploration, context preservation, code review, and more.",
   "version": "0.1.0",
   "author": {
     "name": "oryanmoshe"
   },
-  "repository": "https://github.com/oryanmoshe/skills",
+  "repository": "https://github.com/oryanmoshe/agent-skills",
   "license": "MIT",
   "keywords": [
     "skills",
