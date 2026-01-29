@@ -18,6 +18,8 @@ skills/                   # All skills live here
 | Skill | Description |
 |-------|-------------|
 | `tracking-tasks` | Enforces disciplined task tracking across context boundaries |
+| `exploring-in-parallel` | Parallelizes codebase exploration by launching multiple subagents simultaneously |
+| `preserving-context` | Captures working state before compaction or task switches |
 
 ## Contributing
 

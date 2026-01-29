@@ -7,6 +7,8 @@ Battle-tested skills for disciplined AI-assisted development. Built for [Claude 
 | Skill | What it does |
 |-------|-------------|
 | [`tracking-tasks`](skills/tracking-tasks/SKILL.md) | Enforces disciplined task tracking across context boundaries — never lose work to compaction |
+| [`exploring-in-parallel`](skills/exploring-in-parallel/SKILL.md) | Parallelizes codebase exploration by launching multiple subagents simultaneously |
+| [`preserving-context`](skills/preserving-context/SKILL.md) | Captures working state before compaction or task switches so work can resume seamlessly |
 
 ## Installation
 
