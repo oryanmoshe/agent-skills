@@ -1,54 +1,59 @@
-# agent-skills
+<p align="center">
+  <h1 align="center">agent-skills</h1>
+  <p align="center">
+    Battle-tested skills for disciplined AI-assisted development.
+    <br />
+    <em>Because your AI agent should have good habits, not just good vibes.</em>
+  </p>
+  <p align="center">
+    <a href="https://agentskills.io"><img src="https://img.shields.io/badge/Agent_Skills-compatible-blue" alt="Agent Skills Compatible" /></a>
+    <a href="https://code.claude.com"><img src="https://img.shields.io/badge/Claude_Code-ready-blueviolet" alt="Claude Code Ready" /></a>
+    <a href="https://github.com/oryanmoshe/agent-skills/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License" /></a>
+    <a href="https://github.com/oryanmoshe/agent-skills/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen" alt="PRs Welcome" /></a>
+  </p>
+</p>
 
-Battle-tested skills for disciplined AI-assisted development. Built for [Claude Code](https://claude.com/claude-code), compatible with any tool supporting the [Agent Skills](https://agentskills.io) open standard.
+---
+
+## The Problem
+
+AI coding agents are powerful but undisciplined. They forget what they were doing after context compaction. They write "updated stuff" commit messages. They start five things at once and finish none. They skip code review because "it's just a small change."
+
+These skills fix that.
 
 ## Skills
 
 | Skill | What it does |
 |-------|-------------|
-| [`tracking-tasks`](skills/tracking-tasks/SKILL.md) | Enforces disciplined task tracking across context boundaries — never lose work to compaction |
-| [`exploring-in-parallel`](skills/exploring-in-parallel/SKILL.md) | Parallelizes codebase exploration by launching multiple subagents simultaneously |
-| [`preserving-context`](skills/preserving-context/SKILL.md) | Captures working state before compaction or task switches so work can resume seamlessly |
-| [`committing-code`](skills/committing-code/SKILL.md) | Writes git commits using conventional commits format with gitmoji |
-| [`managing-agents-md`](skills/managing-agents-md/SKILL.md) | Creates and maintains AGENTS.md documentation for AI coding agents |
-| [`addressing-pr-feedback`](skills/addressing-pr-feedback/SKILL.md) | Fetches, organizes, and addresses GitHub PR review comments |
-| [`reviewing-code`](skills/reviewing-code/SKILL.md) | Reviews code changes for bugs, performance, security, and best practices with priority-based rules |
-| [`writing-skills`](skills/writing-skills/SKILL.md) | Guides creation and editing of skills following Anthropic best practices |
+| [`tracking-tasks`](skills/tracking-tasks/SKILL.md) | Never lose work to compaction — enforces task tracking across context boundaries |
+| [`exploring-in-parallel`](skills/exploring-in-parallel/SKILL.md) | Stop searching sequentially — launch multiple subagents simultaneously |
+| [`preserving-context`](skills/preserving-context/SKILL.md) | Capture working state before compaction so you can resume seamlessly |
+| [`committing-code`](skills/committing-code/SKILL.md) | Conventional commits with gitmoji — no more "updated stuff" |
+| [`managing-agents-md`](skills/managing-agents-md/SKILL.md) | Create and maintain AGENTS.md so any AI agent can navigate your codebase |
+| [`addressing-pr-feedback`](skills/addressing-pr-feedback/SKILL.md) | Fetch, organize, and address GitHub PR review comments systematically |
+| [`reviewing-code`](skills/reviewing-code/SKILL.md) | Catch N+1 queries, security issues, and missing tests before they ship |
+| [`writing-skills`](skills/writing-skills/SKILL.md) | Meta-skill — how to write skills that actually trigger and work |
 
-## Installation
+## Quick Start
 
-### Claude Code — Plugin (recommended)
+### Claude Code (recommended)
 
 ```
 /plugin add github:oryanmoshe/agent-skills
 ```
 
-All skills become available immediately across all projects.
+Done. All 8 skills are now available in every project.
 
 ### Claude Code — Manual
 
-Copy individual skill folders into your skills directory:
-
 ```bash
-# Clone the repo
 git clone https://github.com/oryanmoshe/agent-skills.git
-
-# Install all skills (personal — available in all projects)
 cp -r agent-skills/skills/* ~/.claude/skills/
-
-# Or install a single skill
-cp -r agent-skills/skills/tracking-tasks ~/.claude/skills/
-
-# Or install per-project
-cp -r agent-skills/skills/tracking-tasks .claude/skills/
 ```
 
 ### Cursor
 
-Copy skill folders into Cursor's skills directory:
-
 ```bash
-# Clone and copy to Cursor's skill directory
 git clone https://github.com/oryanmoshe/agent-skills.git
 cp -r agent-skills/skills/* .cursor/skills/
 ```
@@ -61,31 +66,36 @@ cp -r agent-skills/skills/* .github/skills/
 
 ### Other Tools
 
-These skills follow the [Agent Skills open standard](https://agentskills.io). Any tool that supports `SKILL.md` files can use them. Check your tool's documentation for the skills directory location.
+These skills follow the [Agent Skills open standard](https://agentskills.io). Any compatible tool can use them — just copy the skill folders to your tool's skills directory.
 
 ## How Skills Work
 
-Each skill is a `SKILL.md` file with YAML frontmatter. The AI reads the `description` field to decide when to activate it — no hooks or configuration needed. Just place the skill in your skills directory and it works.
+Each skill is a `SKILL.md` file with YAML frontmatter. The AI reads the `description` field and decides when to activate it automatically — no hooks, no configuration, no ceremony.
 
 ```yaml
 ---
-name: skill-name
-description: What this does. Use when [specific triggers].
+name: tracking-tasks
+description: Enforces disciplined task tracking. Use when starting any coding task...
 ---
 
-# Skill content here...
+# Tracking Tasks
+
+## Overview
+Every action must be tracked...
 ```
 
-For details on the skill format, see [Extend Claude with skills](https://code.claude.com/docs/en/skills).
+Drop it in the skills directory. It just works.
+
+For the full spec, see [Extend Claude with skills](https://code.claude.com/docs/en/skills).
 
 ## Contributing
 
-See [AGENTS.md](AGENTS.md) for repo conventions. Key rules:
+Want to add a skill? See [AGENTS.md](AGENTS.md) for conventions:
 
-- Skills use **gerund naming** (`tracking-tasks`, not `task-tracker`)
-- Every skill must be **tested with a clean subagent** before merging
-- **README.md and AGENTS.md** must be updated with each new skill
-- Commits use **conventional commits with gitmoji** (see `committing-code` skill)
+- **Gerund naming** — `tracking-tasks`, not `task-tracker`
+- **Test with a subagent** before merging — if it doesn't trigger, it doesn't ship
+- **Update README + AGENTS.md** with every new skill
+- **Conventional commits with gitmoji** — see the [`committing-code`](skills/committing-code/SKILL.md) skill
 
 ## License
 
