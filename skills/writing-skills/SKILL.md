@@ -95,11 +95,7 @@ description: Fetches PR, groups comments, presents summary, lets user select fix
 3. **Content** is self-contained, concise, actionable
 4. **No installation section**, no "When to Use" body section
 5. **Tested with a clean subagent** — does the agent understand and follow the skill correctly?
-6. **README.md updated** — add skill to the skills table with link and one-line description
-7. **AGENTS.md updated** — add skill to the skills table
-8. **Committed** with gitmoji conventional commit (see `committing-code` skill)
-
-Steps 6-8 happen with every skill change, not just creation. Treat docs as part of the deliverable, not an afterthought.
+6. **Committed** with gitmoji conventional commit (see `committing-code` skill — it handles README/AGENTS.md update checks)
 
 ## Testing with a Subagent
 

@@ -106,3 +106,10 @@ Commit early and often:
 - After adding a new file or skill
 - After updating documentation alongside code changes
 - **Never** batch unrelated changes into a single commit
+
+## Pre-Commit Checklist
+
+Before committing, verify:
+- **README.md** is updated if the change affects user-facing documentation (new features, skills, APIs, installation steps)
+- **AGENTS.md** is updated if the change affects project structure, conventions, or available skills
+- Documentation changes are part of the same commit as the code they describe — not a separate "docs" commit after the fact
