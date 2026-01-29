@@ -17,29 +17,75 @@ Battle-tested skills for disciplined AI-assisted development. Built for [Claude 
 
 ## Installation
 
-### Via Claude Code Plugin (recommended)
+### Claude Code — Plugin (recommended)
 
 ```
 /plugin add github:oryanmoshe/agent-skills
 ```
 
-### Manual
+All skills become available immediately across all projects.
 
-Copy any skill folder into your skills directory:
+### Claude Code — Manual
+
+Copy individual skill folders into your skills directory:
 
 ```bash
-# Personal (all projects)
-cp -r skills/tracking-tasks ~/.claude/skills/
+# Clone the repo
+git clone https://github.com/oryanmoshe/agent-skills.git
 
-# Project-specific
-cp -r skills/tracking-tasks .claude/skills/
+# Install all skills (personal — available in all projects)
+cp -r agent-skills/skills/* ~/.claude/skills/
+
+# Or install a single skill
+cp -r agent-skills/skills/tracking-tasks ~/.claude/skills/
+
+# Or install per-project
+cp -r agent-skills/skills/tracking-tasks .claude/skills/
 ```
+
+### Cursor
+
+Copy skill folders into Cursor's skills directory:
+
+```bash
+# Clone and copy to Cursor's skill directory
+git clone https://github.com/oryanmoshe/agent-skills.git
+cp -r agent-skills/skills/* .cursor/skills/
+```
+
+### GitHub Copilot
+
+```bash
+cp -r agent-skills/skills/* .github/skills/
+```
+
+### Other Tools
+
+These skills follow the [Agent Skills open standard](https://agentskills.io). Any tool that supports `SKILL.md` files can use them. Check your tool's documentation for the skills directory location.
 
 ## How Skills Work
 
-Each skill is a `SKILL.md` file with YAML frontmatter. Claude reads the `description` field to decide when to activate it — no hooks or configuration needed. Just place the skill in your skills directory and it works.
+Each skill is a `SKILL.md` file with YAML frontmatter. The AI reads the `description` field to decide when to activate it — no hooks or configuration needed. Just place the skill in your skills directory and it works.
+
+```yaml
+---
+name: skill-name
+description: What this does. Use when [specific triggers].
+---
+
+# Skill content here...
+```
 
 For details on the skill format, see [Extend Claude with skills](https://code.claude.com/docs/en/skills).
+
+## Contributing
+
+See [AGENTS.md](AGENTS.md) for repo conventions. Key rules:
+
+- Skills use **gerund naming** (`tracking-tasks`, not `task-tracker`)
+- Every skill must be **tested with a clean subagent** before merging
+- **README.md and AGENTS.md** must be updated with each new skill
+- Commits use **conventional commits with gitmoji** (see `committing-code` skill)
 
 ## License
 
