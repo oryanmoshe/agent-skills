@@ -13,6 +13,7 @@ Battle-tested skills for disciplined AI-assisted development. Built for [Claude 
 | [`managing-agents-md`](skills/managing-agents-md/SKILL.md) | Creates and maintains AGENTS.md documentation for AI coding agents |
 | [`addressing-pr-feedback`](skills/addressing-pr-feedback/SKILL.md) | Fetches, organizes, and addresses GitHub PR review comments |
 | [`reviewing-code`](skills/reviewing-code/SKILL.md) | Reviews code changes for bugs, performance, security, and best practices with priority-based rules |
+| [`writing-skills`](skills/writing-skills/SKILL.md) | Guides creation and editing of skills following Anthropic best practices |
 
 ## Installation
 
