@@ -20,6 +20,9 @@ skills/                   # All skills live here
 | `tracking-tasks` | Enforces disciplined task tracking across context boundaries |
 | `exploring-in-parallel` | Parallelizes codebase exploration by launching multiple subagents simultaneously |
 | `preserving-context` | Captures working state before compaction or task switches |
+| `committing-code` | Writes git commits using conventional commits with gitmoji |
+| `managing-agents-md` | Creates and maintains AGENTS.md documentation for AI agents |
+| `addressing-pr-feedback` | Fetches, organizes, and addresses GitHub PR review comments |
 
 ## Contributing
 

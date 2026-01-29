@@ -9,6 +9,9 @@ Battle-tested skills for disciplined AI-assisted development. Built for [Claude 
 | [`tracking-tasks`](skills/tracking-tasks/SKILL.md) | Enforces disciplined task tracking across context boundaries — never lose work to compaction |
 | [`exploring-in-parallel`](skills/exploring-in-parallel/SKILL.md) | Parallelizes codebase exploration by launching multiple subagents simultaneously |
 | [`preserving-context`](skills/preserving-context/SKILL.md) | Captures working state before compaction or task switches so work can resume seamlessly |
+| [`committing-code`](skills/committing-code/SKILL.md) | Writes git commits using conventional commits format with gitmoji |
+| [`managing-agents-md`](skills/managing-agents-md/SKILL.md) | Creates and maintains AGENTS.md documentation for AI coding agents |
+| [`addressing-pr-feedback`](skills/addressing-pr-feedback/SKILL.md) | Fetches, organizes, and addresses GitHub PR review comments |
 
 ## Installation
 
