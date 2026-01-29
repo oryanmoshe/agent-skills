@@ -43,7 +43,7 @@ These skills fix that.
 /plugin marketplace add oryanmoshe/agent-skills
 
 # Step 2: Install the plugin
-/plugin install agent-skills@agent-skills-marketplace
+/plugin install agent-skills@oryanmoshe-skills
 ```
 
 Done. All 8 skills are now available in every project.
