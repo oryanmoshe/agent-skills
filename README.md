@@ -10,6 +10,7 @@
     <a href="https://code.claude.com"><img src="https://img.shields.io/badge/Claude_Code-ready-blueviolet" alt="Claude Code Ready" /></a>
     <a href="https://github.com/oryanmoshe/agent-skills/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License" /></a>
     <a href="https://github.com/oryanmoshe/agent-skills/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen" alt="PRs Welcome" /></a>
+    <a href="https://github.com/oryanmoshe/agent-skills/commits/main"><img src="https://img.shields.io/github/last-commit/oryanmoshe/agent-skills" alt="Last Commit" /></a>
   </p>
 </p>
 
