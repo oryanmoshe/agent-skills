@@ -10,7 +10,10 @@
   "plugins": [
     {
       "name": "agent-skills",
-      "source": ".",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/oryanmoshe/agent-skills.git"
+      },
       "description": "Task tracking, parallel exploration, context preservation, code review, and more.",
       "version": "0.1.0"
     }
