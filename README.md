@@ -38,8 +38,12 @@ These skills fix that.
 
 ### Claude Code (recommended)
 
-```
-/plugin add github:oryanmoshe/agent-skills
+```bash
+# Step 1: Add the marketplace
+/plugin marketplace add oryanmoshe/agent-skills
+
+# Step 2: Install the plugin
+/plugin install agent-skills@agent-skills-marketplace
 ```
 
 Done. All 8 skills are now available in every project.
