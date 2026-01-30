@@ -34,6 +34,7 @@ These skills fix that.
 | [`addressing-pr-feedback`](skills/addressing-pr-feedback/SKILL.md) | Fetch, organize, and address GitHub PR review comments systematically |
 | [`reviewing-code`](skills/reviewing-code/SKILL.md) | Catch N+1 queries, security issues, and missing tests before they ship |
 | [`writing-skills`](skills/writing-skills/SKILL.md) | Meta-skill — how to write skills that actually trigger and work |
+| [`organizing-files`](skills/organizing-files/SKILL.md) | Organize macOS files across Desktop, Documents, Downloads, and iCloud Drive |
 
 ## Quick Start
 
@@ -47,7 +48,7 @@ These skills fix that.
 /plugin install agent-skills@oryanmoshe-skills
 ```
 
-Done. All 8 skills are now available in every project.
+Done. All 9 skills are now available in every project.
 
 ### Claude Code — Manual
 

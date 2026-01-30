@@ -25,6 +25,7 @@ skills/                   # All skills live here
 | `addressing-pr-feedback` | Fetches, organizes, and addresses GitHub PR review comments |
 | `reviewing-code` | Reviews code changes for bugs, performance, security, and best practices |
 | `writing-skills` | Guides creation and editing of skills following Anthropic best practices |
+| `organizing-files` | Organizes macOS files across Desktop, Documents, Downloads, and iCloud Drive into a consistent structure |
 
 ## Working in This Repo
 
