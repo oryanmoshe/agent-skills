@@ -38,6 +38,17 @@ skills/                   # All skills live here
 - Update README.md and AGENTS.md skill tables when adding new skills
 - Commit with gitmoji conventional commits (see `committing-code` skill)
 
+## Releasing a New Version
+
+When adding or modifying skills, the plugin cache won't update unless the version is bumped. After committing skill changes:
+
+1. **Bump version** in both `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json` (keep them in sync)
+2. **Commit the version bump** as a separate `🔧 chore: bump version to X.Y.Z` commit
+3. **Push to origin** — the marketplace fetches from the git URL
+4. **Users run** `/plugin update` to pull the new version into their local cache
+
+The plugin system caches skills by version at `~/.claude/plugins/cache/oryanmoshe-skills/agent-skills/<version>/skills/`. If the version doesn't change, the cache won't refresh even after pushing new skills to the repo.
+
 ## Contributing
 
 Each skill follows the [Agent Skills](https://agentskills.io) open standard:
