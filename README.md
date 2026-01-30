@@ -94,6 +94,30 @@ Drop it in the skills directory. It just works.
 
 For the full spec, see [Extend Claude with skills](https://code.claude.com/docs/en/skills).
 
+## Skill-Check Hook
+
+The plugin includes a `UserPromptSubmit` hook that fires on every user message, reminding the agent to check skills before acting. This is a mechanical safety net — skills exist but agents rationalize past them. The hook makes skipping harder.
+
+Plugin users get this automatically. For manual installs, add to `~/.claude/settings.json`:
+
+```json
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'SKILL CHECK: Before acting, scan the skills list. Invoke tracking-tasks + any matching domain skills BEFORE exploring, reading, or writing anything.'",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
 ## Contributing
 
 Want to add a skill? See [AGENTS.md](AGENTS.md) for conventions:

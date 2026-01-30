@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'SKILL CHECK: Before acting, scan the skills list. Invoke tracking-tasks + any matching domain skills BEFORE exploring, reading, or writing anything.'",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

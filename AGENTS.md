@@ -9,6 +9,10 @@ skills/                   # All skills live here
   tracking-tasks/         # Each skill is a folder with SKILL.md
     SKILL.md
   ...
+hooks/
+  hooks.json              # Plugin-distributed hooks (skill-check reminder)
+.claude/
+  settings.json           # Repo-level settings (hooks for contributors)
 .claude-plugin/
   plugin.json             # Plugin manifest for Claude Code marketplace
 ```
@@ -48,6 +52,14 @@ When adding or modifying skills, the plugin cache won't update unless the versio
 4. **Users run** `/plugin update` to pull the new version into their local cache
 
 The plugin system caches skills by version at `~/.claude/plugins/cache/oryanmoshe-skills/agent-skills/<version>/skills/`. If the version doesn't change, the cache won't refresh even after pushing new skills to the repo.
+
+## Hooks
+
+The plugin includes a `UserPromptSubmit` hook that fires on every user message, injecting a skill-check reminder into the conversation context. This is a mechanical safety net — it reminds the agent to scan the skills list before acting.
+
+- **Plugin users** get this automatically via `hooks/hooks.json`
+- **Repo contributors** get this via `.claude/settings.json` (project-level)
+- **Personal setup** can add this to `~/.claude/settings.json` (user-level)
 
 ## Contributing
 
